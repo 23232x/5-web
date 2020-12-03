@@ -1,3 +1,2 @@
-Readme do projeto bickcrft
-hello voel
-aprendendo sobre git
+###### README #########
+Efetuado alterações direto no gitHub.
