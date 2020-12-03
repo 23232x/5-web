@@ -13,55 +13,43 @@ img {
   display: block;
   max-width: 100%;
 }
-
-.header {
+header {
   display: flex;
-  flex-wrap: wrap;
+  padding: 10px calc((100% - 960px) / 2);
+  background: #fec63e;
   justify-content: space-between;
   align-items: center;
-  padding: 10px calc((100% - 960px));
-  background: #fec63e;
 }
 .menu-nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
-
-.menu-nav a {
-  margin-right: 15px;
-  padding: 10px;
+.menu-nav ul li {
+  margin: 5px;
+  padding: 3px;
+}
+.menu-nav ul li a {
   display: block;
-  font-size: 14px;
-  line-height: 20px;
+  text-transform: uppercase;
   color: #000;
   font-weight: bold;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.menu-nav a:hover {
-  color: #fff;
-  transition: all 0.3s;
 }
 
 .introducao-bg {
-  background: url(img/bg.jpg) no-repeat center;
+  background: url(../img/bg.jpg) no-repeat center;
   background-size: cover;
   height: 380px;
 }
 
-.container {
-  max-width: 960px;
-
-  margin: 0 auto;
+.container-introducao {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 60px 0;
+  height: 380px;
+  justify-content: center;
 }
 
-.container h1 {
+.container-introducao h1 {
   font-size: 4em;
   color: #ffff;
 }
@@ -76,20 +64,12 @@ img {
 }
 
 .btn {
-  display: block;
-  border: 3px solid #fec63e;
-  color: #fec63e;
-  padding: 10px 20px 10px 20px;
-  font-weight: bold;
   text-transform: uppercase;
-  transition: all 0.5s;
-  line-height: 1.25em;
-  letter-spacing: 0.1em;
-}
-
-.btn:hover {
-  border: 3px solid #ffff;
-  color: #ffff;
+  display: block;
+  color: #fec63e;
+  border: 3px solid #fec63e;
+  padding: 5px;
+  margin: 5px 10px;
 }
 
 .produtos {
@@ -257,18 +237,6 @@ img {
   margin: 60px auto;
 }
 
-.qualidade:after {
-  content: "";
-  width: 634px;
-  height: 83px;
-  display: block;
-  background: url(img/linhas.svg) no-repeat center;
-  position: relative;
-  margin: 0 auto;
-  top: -237px;
-  right: -1px;
-}
-
 .qualidade h2 {
   text-align: center;
   margin: 40px;
@@ -428,46 +396,10 @@ img {
   margin-bottom: 0;
 }
 
-/* ESTILIZAÇÃO PAGINA SOBRE */
-
-.header ul li a {
-  display: block;
-  padding: 10px;
-  margin: 5px;
-  text-transform: uppercase;
-  letter-spacing: 00.1em;
-  font-size: 1em;
-  font-weight: bold;
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }
-.bg-sobre {
-  background: url(img/bg-sobre.jpg) no-repeat center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.bg-sobre h1 {
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 00.1em;
-}
-.bg-sobre h1::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  color: #fff;
-  margin: 8px auto;
-}
-.bg-sobre p {
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 00.1em;
-}
-.historia-valores {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 60px calc((100% - 960px) / 2);
-}
-/* estilo para table */
