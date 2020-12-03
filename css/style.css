@@ -1,0 +1,233 @@
+/*Estilos gerais*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  line-height: 1.25em;
+}
+
+/*Estilo header*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px - ((100% - 960px) / 2);
+  background: #fec63e;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-menu {
+  padding: 15px 0;
+}
+
+.nav-menu ul {
+  display: flex;
+}
+.nav-menu a {
+  display: block;
+  font-size: 1.25em;
+  margin-left: 20px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.87em;
+  line-height: 1.25em;
+  padding: 10px 0; /*Aumenta a área de contato de cima e debaixo para dispositivos móveis*/
+}
+.nav-menu a:hover {
+  color: #ffff;
+}
+
+/*.introducao {
+  text-align: center;
+}
+*/
+
+.introducao {
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: red;
+  height: 380px;
+}
+
+.container h1 {
+  font-weight: bold;
+  font-size: 3em;
+  color: #ffff;
+}
+
+.quote-externo p {
+  max-width: 360px;
+  line-height: 1.4;
+}
+
+/*
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 960px;
+  background: red;
+  margin: 0 auto;
+}
+
+.container h1 {
+  text-align: center;
+  flex: 1 1 360px;
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+.quote-externo {
+  margin: 0 auto;
+  background: coral;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-externo p {
+  font-style: italic;
+  color: #ffff;
+  margin-top: 30px;
+  max-width: 360px;
+}
+
+.quote-externo p:before,
+.quote-externo p:after {
+  content: " ";
+  width: 60px;
+  height: 3px;
+  background: #ffff;
+  display: block;
+  margin: 20px auto 20px auto;
+}
+
+.quote-externo cite {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.btn {
+  margin-top: 40px;
+  align-self: center;
+  border: 3px solid #fec63e;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn a {
+  display: inline-block;
+  color: #fec63e;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+}
+*/
+.subtitulo {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25em;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  height: 250px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container-itens {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.produto-item {
+  max-width: 300px;
+  flex: 1 1 260px;
+  height: 320px;
+  margin-right: 20px;
+}
+
+.bg-img {
+  background: #000000;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produto-descricao {
+  height: 120px;
+  background: #fec63e;
+  text-align: center;
+  padding: 10px;
+}
+
+.produto-descricao h3 {
+  padding: 10px;
+  font-size: 1.12em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.produto-descricao p {
+  font-size: 1em;
+}
+.produto-descricao h3:after {
+  content: " ";
+  height: 4px;
+  width: 60px;
+  background: #000;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.ancora {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.ancora p {
+  margin: 30px;
+  font-weight: bold;
+  background: tomato;
+  width: 960px;
+  text-align: centers;
+  text-align: center;
+  line-height: 20px;
+}
+
+.ancora .btn-comprar {
+  border: 3px solid #fec63e;
+  padding: 10px 20px 10px 20px;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fec63e;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.ancora .btn-comprar:hover {
+  border: 3px solid #000;
+  color: #000;
+}

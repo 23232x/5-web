@@ -1,0 +1,537 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+/**
+ * Remove anchor text-decoration
+ */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */
+
+ol,
+ul {
+  list-style: none;
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+em,
+img,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+footer,
+header,
+nav,
+section,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px calc((100% - 960px) / 2);
+  background-color: #fec63e;
+  align-items: center;
+}
+
+header .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .menu ul li a {
+  padding: 8px;
+  margin: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 20px;
+}
+
+/* header .menu ul .menu-ativo {
+  color: #ffff;
+} */
+
+.bg-img-produtos {
+  background: url(img/bg-produtos.jpg) no-repeat center;
+  background-size: cover;
+  height: 160px;
+}
+
+.bg-img-produtos h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  text-align: center;
+  padding-top: 40px;
+  color: #ffff;
+}
+
+.bg-img-produtos h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffff;
+  margin: 10px auto;
+}
+
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+}
+.prod {
+  margin-top: 60px;
+}
+
+.produto-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-bg-img1 {
+  flex: 2 1 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+}
+.passeio {
+  background: url(img/produtos/bikcraft-passeio-1.jpg) no-repeat center;
+  background-size: cover;
+}
+.esporte {
+  background: url(img/produtos/bikcraft-esporte-1.jpg) no-repeat center;
+  background-size: cover;
+}
+.retro {
+  background: url(img/produtos/bikcraft-retro-1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.item-bg-color {
+  flex: 1 1 280px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.produto-item h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: 40px;
+  color: #ffff;
+  text-transform: uppercase;
+}
+
+.produto-item h2:after,
+.produto-item h2::before {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #ffff;
+  margin: 8px auto;
+  display: block;
+}
+
+.item-bg-img2 {
+  margin-top: 20px;
+}
+.passeio-desc,
+.esporte-desc,
+.retro-desc {
+  flex: 2 1 450px;
+  margin: 20px 0 0 20px;
+}
+.passeio-desc p,
+.esporte-desc p,
+.retro-desc p {
+  background: #000;
+  color: #ffff;
+  font-size: 1.12em;
+  line-height: 30px;
+  padding: 30px 40px;
+  height: 160px;
+}
+.passeio-desc ul,
+.esporte-desc ul,
+.retro-desc ul {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fec63e;
+  height: 30px;
+}
+
+.passeio-desc ul li,
+.esporte-desc ul li,
+.retro-desc ul li {
+  border: 1px solid #000;
+  flex: 1 1 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.orcamento {
+  padding: 60px calc((100% - 960px) / 2);
+  margin: 0 auto;
+  background: #000;
+}
+
+.titulo h2 {
+  color: #fec63e;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 40px 50px;
+  text-align: center;
+}
+
+.orcamento h1 {
+  color: #fec63e;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.orcamento h1::after,
+.form-orcamento h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 10px auto;
+}
+.form-orcamento h2::after {
+  margin-left: 20px;
+}
+
+.orcamento h3 {
+  color: #fec63e;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 40px 50px;
+  margin: 0 auto;
+}
+
+.orcamento h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-orcamento {
+  flex: 2 1 300px;
+}
+/*  */
+.form-orcamento h2 {
+  text-align: left;
+  color: #fec63e;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 150px;
+}
+
+.form-orcamento h2::after {
+  margin-left: 0px;
+}
+
+form label {
+  font-size: 1.2em;
+  color: #ffff;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+}
+form input {
+  display: block;
+  width: 100%;
+  border: 3px solid #fec63e;
+  outline: none;
+  margin: 5px;
+  color: #ffff;
+  background: #000;
+  font-size: 14px;
+  padding: 5px;
+  max-width: 350px;
+  margin: 5px 0;
+}
+form textarea {
+  display: block;
+  width: 100%;
+  border: 3px solid #fec63e;
+  outline: none;
+  margin-bottom: 20px;
+  color: #ffff;
+  background: #000;
+  font-size: 14px;
+  padding: 5px;
+  max-width: 350px;
+  margin-top: 5px;
+}
+form button {
+  display: block;
+  border: 3px solid #fec63e;
+  color: #fec63e;
+  background: none;
+  margin: 3px;
+  padding: 7px 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+form button:hover {
+  border: 3px solid white;
+  color: white;
+}
+
+.dados {
+  flex: 1 1 240px;
+  /* height: 420px; */
+  color: white;
+}
+
+.dados h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fec63e;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.dados h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 5px 0;
+}
+
+.dados p {
+  padding: 10px;
+  font-size: 18px;
+}
+.dados label {
+  display: block;
+  line-height: 25px;
+  font-size: 18px;
+}
+.dados ul li {
+  font-size: 1.13em;
+  color: white;
+  line-height: 25px;
+  padding: 5px;
+}
+
+.dados ul li:nth-child(odd) {
+  background: #292929;
+}
+
+/* footer */
+.footer {
+  color: #fff;
+}
+.bg-imagem {
+  background: url(img/bg-footer.jpg) no-repeat center;
+  background-size: cover;
+  height: 220px;
+}
+.container p {
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: #fff;
+  max-width: 300px;
+  text-align: center;
+  font-style: italic;
+  line-height: 20px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.container blockquote cite {
+  text-transform: capitalize;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 1.13em;
+}
+
+.footer h3 {
+  color: #fec63e;
+  text-transform: uppercase;
+}
+.footer h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #fec63e;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.bg-historia {
+  padding: 0 calc((100% - 960px) / 2);
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  height: 200px;
+}
+/*  */
+.historia {
+  flex: 2 1 420px;
+}
+
+.historia p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.contato {
+  flex: 1 1 150px;
+}
+
+/*  */
+/*REDES SOCIAIS*/
+.linha li {
+  display: inline-block;
+}
+
+.sociais img {
+  border: 3px solid #fec63e;
+  padding: 5px;
+  margin: 5px;
+}
+
+.bg-direitos {
+  background: #fec63e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 0;
+}
+
+/* ESTILIZAÇÃO PAGINA SOBRE */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 calc((100% - 960px) / 2);
+  background: #fec63e;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header ul li a {
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 00.1em;
+  font-size: 1em;
+  font-weight: bold;
+}
+.bg-sobre {
+  background: url(img/bg-sobre.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.bg-sobre h1 {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 00.1em;
+}
+.bg-sobre h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  color: #fff;
+  margin: 8px auto;
+}
+.bg-sobre p {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 00.1em;
+}
+.historia-valores {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px calc((100% - 960px) / 2);
+}
