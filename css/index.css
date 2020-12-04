@@ -13,6 +13,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
 header {
   display: flex;
   padding: 10px calc((100% - 960px) / 2);
@@ -166,9 +167,10 @@ header {
 
 /*  PORTIFOLIO */
 .portifolio {
+  display: flex;
+  flex-direction: column;
   background: #000;
   padding: 30px calc((100% - 960px) / 2);
-  max-width: 960px;
 }
 
 .portifolio h2 {
@@ -189,26 +191,13 @@ header {
   display: block;
   margin: 10px auto;
 }
-
 .container-portifolio {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portifolio-item img {
-  flex: 1 1 300px;
+.portifolio-item {
   margin: 10px;
-}
-
-.portifolio h2 {
-  text-align: center;
-  margin: 60px auto;
-  color: #fec63e;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.1em;
 }
 
 .call-btn p {
@@ -417,9 +406,29 @@ header {
   .menu-nav ul li a:hover {
     color: #fff;
   }
+  .container-produtos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .produto-item {
+    flex: 1 1 200px;
+  }
+
+  .container-portifolio {
+    display: flex;
+  }
+
+  .portifolio-item {
+  }
 }
+
 /* ESTILO PARA SMARTPHONE */
 @media only screen and (max-width: 787px) {
+  .wrapper {
+    max-width: 787px;
+    display: flex;
+    flex-direction: column;
+  }
   .header {
     display: flex;
     flex-direction: column;
@@ -455,7 +464,29 @@ header {
   .citacao p {
     font-size: 1em;
   }
-  .produto-img img {
-    margin: 0 auto;
+
+  .container-produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .produto-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .produto-img {
+    display: flex;
+    justify-content: center;
+  }
+  .produtos-descricao p {
+    padding: 0 20px 20px 20px;
+  }
+  .portifolio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portifolio-item img {
+    flex: 1 1 280px;
   }
 }
